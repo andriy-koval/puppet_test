@@ -21,7 +21,7 @@ profiles::zabbix_database::mysql::mysql_files::source:
   - '/usr/share/doc/zabbix-server-mysql-3.4.6/create.sql.gz'
 profiles::zabbix_database::mysql::mysql_files::table: 'item_condition'
 profiles::zabbix_database::mysql::mysql_files::field: 'itemid'
-profiles::zabbix_database::mysql::mysql_files::value: '23734'
+profiles::zabbix_database::mysql::mysql_files::value: '22444'
 profiles::zabbix_agent::zabbix::zabbix_agent::server: '192.168.10.10'
 profiles::zabbix_agent::zabbix::zabbix_agent::server_active: '192.168.10.10'
 profiles::zabbix_agent::zabbix::zabbix_agent::host_metadata_item: 'system.uname'

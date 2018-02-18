@@ -39,9 +39,14 @@ class zabbix::zabbix_server (
     require => Package['zabbix-server'],
   }
 
-  package { 'zabbix-web-mysql':
+  package { 'zabbix-proxy-mysql':
     ensure  => 'installed',
     require => Package['zabbix-server-mysql'],
+  }
+
+  package { 'zabbix-web-mysql':
+    ensure  => 'installed',
+    require => Package['zabbix-proxy-mysql'],
   }
 
   file { '/etc/zabbix/zabbix_server.conf':
